@@ -1,0 +1,282 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #3399ff;
+  }
+  
+  .circle{
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    animation: ripple 15s infinite;
+    box-shadow: 0px 0px 1px 0px #508fb9;
+  }
+  
+  .small{
+    width: 200px;
+    height: 200px;
+    left: -100px;
+    bottom: -100px;
+  }
+  
+  .medium{
+    width: 400px;
+    height: 400px;
+    left: -200px;
+    bottom: -200px;
+  }
+  
+  .large{
+    width: 600px;
+    height: 600px;
+    left: -300px;
+    bottom: -300px;
+  }
+  
+  .xlarge{
+    width: 800px;
+    height: 800px;
+    left: -400px;
+    bottom: -400px;
+  }
+  
+  .xxlarge{
+    width: 1000px;
+    height: 1000px;
+    left: -500px;
+    bottom: -500px;
+  }
+  
+  .shade1{
+    opacity: 0.2;
+  }
+  .shade2{
+    opacity: 0.5;
+  }
+  
+  .shade3{
+    opacity: 0.7;
+  }
+  
+  .shade4{
+    opacity: 0.8;
+  }
+  
+  .shade5{
+    opacity: 0.9;
+  }
+  
+  @keyframes ripple{
+    0%{
+      transform: scale(0.8);
+    }
+    
+    50%{
+      transform: scale(1.2);
+    }
+    
+    100%{
+      transform: scale(0.8);
+    }
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+  }
+  
+  a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  
+  /* Encabezado */
+  
+  header {
+    background-color: skyblue;
+    color: #fff;
+    padding: 20px;
+    
+  }
+  
+  header h1 {   
+    margin: 0;
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    
+  }
+  
+  /* Secciones */
+  
+  section {
+    padding: 50px 0;
+    text-align: center;
+  
+  }
+  
+  section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    
+  }
+  
+  .arriba{
+    height: 70vh;
+    font-family: "eurostile", sans-serif;
+    
+  }
+  .medio p{
+    width: 70%;
+    margin: 25px auto;
+    
+  }
+
+  .arriba img{
+    width: 400px;
+  }
+  .section-content {
+    margin-bottom: 30px;
+  }
+  
+  .proyecto {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .proyecto h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .proyecto p {
+    color: #666;
+  }
+  
+  /* Formulario de contacto */
+  
+  .contact-form {
+    max-width: 500px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Pie de página */
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  
+  section {
+    padding: 50px;
+  }
+  
+  .proyecto {
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
